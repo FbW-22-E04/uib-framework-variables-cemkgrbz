@@ -1,0 +1,64 @@
+@use 'config';
+
+
+.card-container, .article-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+}
+
+.card {
+    width: 80%;
+    height: 15rem;
+    background-color: config.$card-background-color;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    padding: 0.8rem;
+    .mountains {
+        background-image: url(../images/mountain.jpg);
+        width: 100%;
+        height: 8rem;
+        margin: 0 auto 0.5rem auto;
+        background-size: cover;
+
+    }
+    .surfer {
+        background-image: url(../images/surfer.jpg);
+        width: 100%;
+        height: 8rem;
+        margin: 0 auto 0.5rem auto;
+        background-size: cover;
+    }
+    .tree {
+        background-image: url(../images/tree.jpg);
+        width: 100%;
+        height: 8rem;
+        margin: 0 auto 0.5rem auto;
+        background-size: cover;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+.aside {
+    width: 80%;
+    margin: auto;
+    padding: 0.8rem;
+    border: 1px solid config.$card-text-color;
+    p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    }
+}
+
+.article {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    font-size: 0.9rem;
+    p {
+        margin-top: 0.5rem;
+    }
+}
